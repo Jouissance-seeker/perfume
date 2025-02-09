@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-[#878787] bg-white font-dana flex h-dvh flex-col;
+}
+
+main {
+  @apply flex flex-1 flex-col items-center justify-center gap-14;
+}
