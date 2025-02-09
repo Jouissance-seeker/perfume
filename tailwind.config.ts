@@ -20,19 +20,19 @@ export default {
         DEFAULT: '300ms',
       },
       colors: {
-        primary: {
-          100: '#E6EEFA',
-          200: '#DAC0A3',
-        },
-        secondary: {
-          100: '#E6EEFA',
-          200: '#CEDEF6',
-          300: '#102C57',
-        },
+        oxford: '#102C57',
+        powder: '#CEDEF6',
+        alice: '#E6EEFA',
+        camel: '#DAC0A3',
+        seashell: '#F5EDE5',
       },
       fontFamily: {
         dana: ['var(--font-dana)'],
         pelak: ['var(--font-pelak)'],
+      },
+      fontSize: {
+        smp: '15px',
+        xsp: '13px',
       },
     },
   },
