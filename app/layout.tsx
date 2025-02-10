@@ -19,6 +19,11 @@ const dana = localFont({
       style: 'normal',
     },
     {
+      path: '../public/fonts/dana/regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
       path: '../public/fonts/dana/medium.woff2',
       weight: '500',
       style: 'normal',

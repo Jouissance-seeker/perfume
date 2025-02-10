@@ -1,7 +1,5 @@
-export default function Home() {
-  return (
-    <div className="flex size-full flex-col gap-6">
-      <p>hi</p>
-    </div>
-  );
+import { HeroSection } from '@/containers/routes/home/hero-section';
+
+export default function Page() {
+  return <HeroSection />;
 }

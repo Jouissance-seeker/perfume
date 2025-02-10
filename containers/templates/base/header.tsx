@@ -16,13 +16,13 @@ const Mobile = () => {
   return (
     <div className="flex items-center justify-between py-5 lg:hidden">
       <Link href="/cart">
-        <ShoppingCart variant="Bold" size="30" className="fill-blue" />
+        <ShoppingCart variant="Bold" size="28" className="fill-blue-300" />
       </Link>
       <Link href="/">
         <Image src="/images/logo.png" alt="logo" width={120} height={120} />
       </Link>
       <Link href="/auth">
-        <User size="30" className="fill-blue" />
+        <User size="28" className="fill-blue-300" />
       </Link>
     </div>
   );
@@ -36,7 +36,7 @@ const Desktop = () => {
       </Link>
       <div className="flex items-center gap-4">
         <Link href="/cart">
-          <ShoppingCart variant="Bold" size="30" className="fill-blue" />
+          <ShoppingCart variant="Bold" size="30" className="fill-blue-300" />
         </Link>
         <Link href="/auth">
           <Button variant="blue">ورود / ثبت نام</Button>

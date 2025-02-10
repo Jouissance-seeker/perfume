@@ -21,10 +21,14 @@ export default {
       },
       colors: {
         blue: {
-          DEFAULT: '#102C57',
+          100: '#E6EEFA',
+          200: '#CEDEF6',
+          300: '#102C57',
         },
         brown: {
-          DEFAULT: '#DAC0A3',
+          100: '#F5EDE5',
+          200: '#DAC0A3',
+          300: '#4E381F',
         },
       },
       fontFamily: {
