@@ -20,11 +20,12 @@ export default {
         DEFAULT: '300ms',
       },
       colors: {
-        oxford: '#102C57',
-        powder: '#CEDEF6',
-        alice: '#E6EEFA',
-        camel: '#DAC0A3',
-        seashell: '#F5EDE5',
+        blue: {
+          DEFAULT: '#102C57',
+        },
+        brown: {
+          DEFAULT: '#DAC0A3',
+        },
       },
       fontFamily: {
         dana: ['var(--font-dana)'],

@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Base } from './base';
+import { Base } from './templates/base';
 
 interface ITemplateProps {
   children: ReactNode;
