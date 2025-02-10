@@ -27,7 +27,7 @@ export default {
         },
         brown: {
           100: '#F5EDE5',
-          200: '#DAC0A3',
+          200: '#E8D7C4',
           300: '#4E381F',
         },
       },

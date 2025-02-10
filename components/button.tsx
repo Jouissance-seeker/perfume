@@ -12,7 +12,7 @@ export const Button = (props: IButtonProps) => {
   return (
     <button
       className={cn(
-        'transition-all px-3 py-2 rounded-md text-smp',
+        'transition-all px-2.5 py-1.5 rounded-lg text-smp',
         {
           'bg-white border border-white text-blue-300 hover:text-white hover:bg-blue-300':
             props.variant === 'white',

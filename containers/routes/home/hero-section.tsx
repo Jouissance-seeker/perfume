@@ -1,4 +1,5 @@
 'use client';
+
 import 'swiper/css';
 import { ArrowLeft2, ArrowRight2 } from 'iconsax-react';
 import Image from 'next/image';
@@ -89,7 +90,6 @@ const Slider = () => {
         }}
         modules={[Autoplay]}
         ref={swiperRef}
-        id="hero-slider"
       >
         {heroSlider.map((item) => (
           <SwiperSlide
