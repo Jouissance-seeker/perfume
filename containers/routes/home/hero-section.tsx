@@ -3,8 +3,10 @@ import 'swiper/css';
 import { ArrowLeft2, ArrowRight2 } from 'iconsax-react';
 import Image from 'next/image';
 import { useRef } from 'react';
+import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { heroSlider } from '@/data/home/hero-slider';
+import { useCountUp } from '@/hooks/count-up';
 
 export function HeroSection() {
   return (
@@ -16,6 +18,27 @@ export function HeroSection() {
 }
 
 const Text = () => {
+  const customers = useCountUp(270);
+  const products = useCountUp(1000);
+  const users = useCountUp(200);
+  const stats = [
+    {
+      title: 'رضایت مشتری',
+      subtitle: 'مشتریانی از سراسر کشور',
+      count: customers,
+    },
+    {
+      title: 'محصول اصل',
+      subtitle: 'محصولی از دل اروپا و آمریکا',
+      count: products,
+    },
+    {
+      title: 'کاربر فعال',
+      subtitle: 'در سایت ما عضو شده اند',
+      count: users,
+    },
+  ];
+
   return (
     <div className="flex w-full flex-col gap-4">
       <p className="relative text-xl font-light text-blue-300 after:absolute after:-bottom-1 after:right-0 after:-z-10 after:h-4 after:w-[150px] after:rounded-full after:bg-blue-100 lg:text-3xl">
@@ -28,28 +51,10 @@ const Text = () => {
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
-        متنوع با هدف بهبود ابزارهای کاربردی می باشد.متن ساختگی با تولید سادگی
-        نامفهوم از صنعت چاپ است.لکه روزنامه و مجله در ستون و سطرآنچنان که لازم
-        است.
+        متنوع با هدف بهبود ابزارهای کاربردی می باشد.
       </p>
       <div className="mt-3 flex justify-around">
-        {[
-          {
-            title: 'رضایت مشتری',
-            subtitle: 'مشتریانی از سراسر کشور',
-            count: 270,
-          },
-          {
-            title: 'محصول اصل',
-            subtitle: 'محصولی از دل اروپا و آمریکا',
-            count: 1000,
-          },
-          {
-            title: 'کاربر فعال',
-            subtitle: 'در سایت ما عضو شده اند',
-            count: 200,
-          },
-        ].map((item) => (
+        {stats.map((item) => (
           <div key={item.title} className="flex flex-col items-center">
             <div className="relative w-16 rounded-l-full bg-brown-100 py-4 text-center text-lg text-brown-300 after:absolute after:-right-2 after:bottom-2 after:h-3/4 after:w-2 after:rounded-r-md after:bg-brown-200 lg:font-medium">
               {item.count}
@@ -78,6 +83,11 @@ const Slider = () => {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         spaceBetween={8}
         loop
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
         ref={swiperRef}
         id="hero-slider"
       >
@@ -92,7 +102,7 @@ const Slider = () => {
                 alt="اسلاید"
                 width={400}
                 height={600}
-                className="h-auto w-full max-w-[350px] object-contain sm:max-w-[450px] lg:max-w-[550px]"
+                className="h-auto w-full max-w-[350px] object-contain sm:max-w-[450px] lg:max-w-[500px]"
               />
             </div>
           </SwiperSlide>

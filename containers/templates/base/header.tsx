@@ -36,7 +36,7 @@ const Desktop = () => {
       </Link>
       <div className="flex items-center gap-4">
         <Link href="/cart">
-          <ShoppingCart variant="Bold" size="30" className="fill-blue-300" />
+          <ShoppingCart variant="Bold" size="28" className="fill-blue-300" />
         </Link>
         <Link href="/auth">
           <Button variant="blue">ورود / ثبت نام</Button>
