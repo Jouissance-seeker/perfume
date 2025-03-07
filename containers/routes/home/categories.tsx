@@ -35,6 +35,7 @@ export function Categories() {
         'https://halochin.ir/perfume-shop/wp-content/uploads/2023/12/Frame-10-1.png',
     },
   ];
+
   return (
     <section className="container space-y-7">
       {/* head */}
